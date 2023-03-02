@@ -24,12 +24,10 @@
 
   <script>
 
-    var map = new L.Map('map').fitWorld();
+    var map = new L.Map('map')
 	  
 	var mb = L.tileLayer.mbTiles('./Test-Tile.mbtiles', {
 		noWrap: true,
-		center: [40.74, -73.99],
-		zoom: 2,
 		minZoom: 2,
 		maxZoom: 17
 	}).addTo(map);
