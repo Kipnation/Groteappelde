@@ -27,8 +27,8 @@
     var map = new L.Map('map').fitWorld();
 
 	var mb = L.tileLayer.mbTiles('./countries-raster.mbtiles', {
-		minZoom: 0,
-		maxZoom: 6
+		minZoom: 1,
+		maxZoom: 12
 	}).addTo(map);
 
 	mb.on('databaseloaded', function(ev) {
