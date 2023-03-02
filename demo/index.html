@@ -28,8 +28,8 @@
 
 	var mb = L.tileLayer.mbTiles('./countries-raster.mbtiles', {
 		center: [40.74, -73.99],
-		minZoom: 0,
-		maxZoom: 6
+		minZoom: 10,
+		maxZoom: 17
 	}).addTo(map);
 
 	mb.on('databaseloaded', function(ev) {
