@@ -32,6 +32,8 @@
 		maxZoom: 6
 	}).addTo(map);
 
+	L.marker([40.74, -73.99]).addTo(map)  
+	  
 	mb.on('databaseloaded', function(ev) {
 		console.info('MBTiles DB loaded', ev);
 	});
