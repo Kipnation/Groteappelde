@@ -26,18 +26,18 @@
   <script>
 
     var map = new L.map('map', {
-      center: [40.74, -73.99],
+      center: [40.91, -74.00],
       zoom: 14,
       scrollWheelZoom: true
     });
 	  
-	var mb = L.tileLayer.mbTiles('./Test-Tile.mbtiles', {
+	var mb = L.tileLayer.mbTiles('./Test-Tile2.mbtiles', {
 		noWrap: true,
 		minZoom: 14,
 		maxZoom: 17
 	}).addTo(map);
 
-	L.marker([40.74, -73.99]).addTo(map)  
+	L.marker([40.91, -74.00]).addTo(map)  
 	  
 	mb.on('databaseloaded', function(ev) {
 		console.info('MBTiles DB loaded', ev);
