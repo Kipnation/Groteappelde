@@ -27,8 +27,8 @@
     var map = new L.Map('map').fitWorld();
 
 	var mb = L.tileLayer.mbTiles('./Test-Tile.mbtiles', {
-		minZoom: 1,
-		maxZoom: 12
+		minZoom: 14,
+		maxZoom: 17
 	}).addTo(map);
 
 	mb.on('databaseloaded', function(ev) {
