@@ -12,8 +12,8 @@
   <title>Leaflet.TileLayer.MBTiles demo</title>
   <style>
     #map {
-      width:600px;
-      height:400px;
+      width:1200px;
+      height:800px;
     }
   </style>
 </head>
@@ -27,8 +27,8 @@
     var map = new L.Map('map').fitWorld();
 
 	var mb = L.tileLayer.mbTiles('./Test-Tile.mbtiles', {
-		minZoom: 0,
-		maxZoom: 6
+		minZoom: 12,
+		maxZoom: 17
 	}).addTo(map);
 
 	mb.on('databaseloaded', function(ev) {
