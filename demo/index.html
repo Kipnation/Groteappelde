@@ -26,13 +26,13 @@
 
     var map = new L.map('map', {
       center: [40.74, -73.99],
-      zoom: 12,
+      zoom: 14,
       scrollWheelZoom: true
     });
 	  
 	var mb = L.tileLayer.mbTiles('./Test-Tile.mbtiles', {
 		noWrap: true,
-		minZoom: 2,
+		minZoom: 14,
 		maxZoom: 17
 	}).addTo(map);
 
