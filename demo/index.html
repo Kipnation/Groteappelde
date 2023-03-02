@@ -23,6 +23,10 @@
 
   <script>
 
+	var 	southWest = L.latLng(40.5744, -74.3032),
+    		northEast = L.latLng(40.6407, -74.2160),
+    		bounds = L.latLngBounds(southWest, northEast);
+	  
     	var map = new L.map('map', {
      	 center: [40.6078, -74.2603],
      	 zoom: 15,
@@ -31,6 +35,7 @@
 	  
 	var mb = L.tileLayer.mbTiles('./Test-Tile5.mbtiles', {
 		noWrap: true,
+		maxBounds: bounds,
 		minZoom: 12,
 		maxZoom: 17
 	}).addTo(map);
