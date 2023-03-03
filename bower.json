@@ -1,12 +1,15 @@
 {
   "name": "leaflet.hardbounds",
   "version": "1.0.0",
+  "homepage": "https://github.com/asleepwalker/leaflet.hardbounds",
+  "authors": [
+    "Artyom 'Sleepwalker' Fedosov <mail@asleepwalker.ru>"
+  ],
   "description": "Leaflet plugin to prevent panning outside of map bounds",
   "main": "./lib/leaflet.hardbounds.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/asleepwalker/leaflet.hardbounds.git"
-  },
+  "moduleType": [
+    "globals"
+  ],
   "keywords": [
     "leaflet",
     "panning",
@@ -15,11 +18,14 @@
     "prevent",
     "outside"
   ],
-  "author": "Artyom 'Sleepwalker' Fedosov <mail@asleepwalker.ru>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/asleepwalker/leaflet.hardbounds/issues"
-  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "leaflet": ">=0.6.3"
   }
