@@ -35,6 +35,12 @@
 		maxZoom: 17,
 	}).addTo(map);
 	
+	var bounds = L.latLngBounds([[40.5744, -74.3032], [40.6407, -74.2160]]);
+	map.setMaxBounds(bounds);
+	map.on('drag', function() {
+	map.panInsideBounds(bounds, { animate: false });
+	});
+	  
 	L.marker([40.6078, -74.2603]).addTo(map)  
 	  
 	mb.on('databaseloaded', function(ev) {
