@@ -8,8 +8,6 @@
 <script src="https://unpkg.com/sql.js@0.3.2/js/sql.js"></script>
 
 <script src="../Leaflet.TileLayer.MBTiles.js"></script>
-	
-<script src="../leaflet.hardbounds.js"></script>
 
   <meta charset="utf-8">
   <title>Leaflet.TileLayer.MBTiles demo</title>
@@ -36,11 +34,6 @@
 		minZoom: 12,
 		maxZoom: 17,
 	}).addTo(map);
-	
-	map.addHardBounds();
-	
-	var bounds = L.latLngBounds([[51.55, -0.2], [51.45, 0]]);
-	map.setMaxBounds(bounds);
 	
 	L.marker([40.6078, -74.2603]).addTo(map)  
 	  
