@@ -43,21 +43,6 @@
 	map.panInsideBounds(bounds, { animate: false });
 	});
 	
-	var shelter1 = L.marker([40.6059, -74.2962], {icon: shelterIcon});
-
-	var shelterMarkers = new L.FeatureGroup();
-
-	shelterMarkers.addLayer(shelter1);
-
-	map.on('zoomend', function() {
-  	  if (map.getZoom() <13){
-         	   map.removeLayer(shelterMarkers);
- 	  }
-    	  else {
-           	 map.addLayer(shelterMarkers);
-     	      }
-	});  
-	  
 	L.marker([40.6078, -74.2603]).addTo(map)  
 	  
 	mb.on('databaseloaded', function(ev) {
