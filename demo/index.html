@@ -24,11 +24,9 @@
   <script>
   
     	var map = new L.map('map', {
-     	 center: bounds.getCenter(),
-     	 zoom: 14,
+     	 center: [40.6078, -74.2603],
+	 zoom: 14,
      	 scrollWheelZoom: true,
-	 maxBounds: bounds,
-	 maxBoundsViscosity: 0.75	
   	});
 	  
 	var mb = L.tileLayer.mbTiles('./Test-Tile5.mbtiles', {
