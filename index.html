@@ -52,18 +52,24 @@
         	iconSize:     [30, 45],
         	shadowSize:   [50, 64],
         	iconAnchor:   [15, 45],
-        	shadowAnchor: [15, 45],
+        	shadowAnchor: [15, 25],
         	popupAnchor:  [-3, -76]
    	 }
 	});  
 	  
 	var azoriusIcon = new GuildIcon({iconUrl: 'Azorius-Icon.png'}),
     	    borosIcon = new GuildIcon({iconUrl: 'Boros-Icon.png'}),
-    	    dimirIcon = new GuildIcon({iconUrl: 'Dimir-Icon.png'});  
-	
-	L.marker([40.63159, -74.25525], {icon: borosIcon}).addTo(map);  
+	    dimirIcon = new GuildIcon({iconUrl: 'Dimir-Icon.png'}),
+	    golgariIcon = new GuildIcon({iconUrl: 'Golgari-Icon.png'}),
+	    gruulIcon = new GuildIcon({iconUrl: 'Gruul-Icon.png'}),
+	    izzetIcon = new GuildIcon({iconUrl: 'Izzet-Icon.png'}),
+	    rakdosIcon = new GuildIcon({iconUrl: 'Rakdos-Icon.png'}),
+	    selesnyaIcon = new GuildIcon({iconUrl: 'Selesnya-Icon.png'}),
+	    simicIcon = new GuildIcon({iconUrl: 'Simic-Icon.png'}),
+    	    orzhovIcon = new GuildIcon({iconUrl: 'Orzhov-Icon.png'});  
 	  
 	L.marker([40.63903, -74.26952]).addTo(map);
+	L.marker([40.63159, -74.25525], {icon: borosIcon}).addTo(map);
 	L.marker([40.62241, -74.28258]).addTo(map);
 	L.marker([40.61296, -74.2911]).addTo(map);
 	L.marker([40.61056, -74.27659]).addTo(map);
