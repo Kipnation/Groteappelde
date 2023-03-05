@@ -17,8 +17,8 @@
 <style>
 	body { margin:0; padding:0; }
 	#map { position: absolute; top:0; bottom:0; right:0; left:0; }
- 	#map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; 
-		     border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
+ 	#map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); 
+		     padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
 </style>
 </head>
 
@@ -30,9 +30,9 @@
 <script>
   
     	var map = new L.map('map', {
-     	 center: [40.6078, -74.2603],
-	 zoom: 15,
-     	 scrollWheelZoom: true,
+     	 	center: [40.6078, -74.2603],
+		zoom: 15,
+     	 	scrollWheelZoom: true,
   	});
 	  
 	var mb = L.tileLayer.mbTiles('Maps/Test-Tile5.mbtiles', {
@@ -42,9 +42,9 @@
 	}).addTo(map);
 	  
 	var bounds = L.latLngBounds([[40.5744, -74.3032], [40.6407, -74.2160]]);
-	map.setMaxBounds(bounds);
-	map.on('drag', function() {
-	map.panInsideBounds(bounds, { animate: false });
+		map.setMaxBounds(bounds);
+		map.on('drag', function() {
+		map.panInsideBounds(bounds, { animate: false });
 	});
 	  
 	L.control.betterscale().addTo(map);  
