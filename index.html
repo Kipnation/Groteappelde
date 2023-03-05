@@ -46,6 +46,21 @@
 	  
 	L.control.betterscale().addTo(map);  
 	
+	var GuildIcon = L.Icon.extend({
+  	  options: {
+    	    shadowUrl: 'marker-shadow.png',
+        	iconSize:     [38, 95],
+        	shadowSize:   [50, 64],
+        	iconAnchor:   [22, 94],
+        	shadowAnchor: [4, 62],
+        	popupAnchor:  [-3, -76]
+   	 }
+	});  
+	  
+	var azoriusIcon = new LeafIcon({iconUrl: 'Azorius-Icon.png'}),
+    	    borosIcon = new LeafIcon({iconUrl: 'Boros-Icon.png'}),
+    	    dimirIcon = new LeafIcon({iconUrl: 'Dimir-Icon.png'});  
+	  
 	L.marker([40.63903, -74.26952]).addTo(map);
 	L.marker([40.63159, -74.25525]).addTo(map);
 	L.marker([40.62241, -74.28258]).addTo(map);
